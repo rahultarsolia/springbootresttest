@@ -1,0 +1,31 @@
+<assembly>
+	<id>aws-archive-linux</id>
+	<formats>
+		<format>tar.gz</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+	<fileSets>
+		<fileSet>
+			<directory>src/deployment/aws</directory>
+			<includes>
+				<include>appspec.yml</include>
+			</includes>
+			<outputDirectory></outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>src/deployment/aws/service-scripts</directory>
+			<outputDirectory>scripts</outputDirectory>
+			<includes>
+				<include>*.sh</include>
+			</includes>
+		</fileSet>
+		<fileSet>
+			<directory>target</directory>
+			<includes>
+				<include>*.jar</include>
+			</includes>
+			<outputDirectory></outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>
+Ï
